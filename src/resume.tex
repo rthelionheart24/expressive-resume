@@ -1,63 +1,131 @@
 \documentclass{ExpressiveResume}
 
+
 % ----- Resume -----
 \begin{document}
 
 % ----- Name + Contact Information -----
 \resumeheader[
-    firstname=John,
-    middleinitial=N,
-    lastname=Doe,
-    email=john.doe@example.com,
-    phone=123-456-7890,
-    linkedin=johndoe,
-    github=johndoe,
-    city=Town,
-    state=State,
-    qrcode=./images/qr.png,
+    firstname=Qifa(Richard),
+    lastname=Wang,
+    email=qifaw2000@gmail.com,
+    phone=617-816-5834,
+    linkedin=qifa-wang-28a180170,
+    github=rthelionheart24,
     fixobjectivespacing=true
 ]
 
-\objective{A software engineering graduate with 2 years of work
-    experience at various internships \\ seeking opportunities to develop
-    web/mobile applications for Company XYZ.}
+\objective{An engineering graduate passionate about SW/HW co-design, computer architecture design, parallel computing, GPU, quantum computing and seeking related opportunities}
 
 % ----- Education -----
 \section{Education}
 
-\experience{Bachelor of Science}{Software Engineering}{Aug 2018}{May 2022}{
-    \noindent Fabulous Honors College \hfill GPA: 4.00 \newline
-    Super Duper University, Town, State \newline
+\experience{Master of Science in Engineering}{Computer Science \& Engineering}{Aug 2023}{Dec 2024}{
+    \noindent Rackham Graduate School, University of Michigan \hfill GPA: 4.00
 }
+
+\experience{Bachelor of Science in Engineering}{Computer Science, minors in Math and Physics}{Aug 2020}{May 2023}{
+    \noindent College of Engineering, University of Michigan \hfill \textit{Summa Cum Laude, Dean's List, University Honors}, GPA: 3.77
+}
+
+\section{Skills}
+\noindent\achievement{\textit{Computer Architecture, Parallel Computing, Compiler, Data Sturcture and Algorithms, Operating System, Machine Learning, Web Systems, Quantum Computing and Architecture}}
+\achievement{\textit{C/C++, Python, Java, Verilog, SystemVerilog, CUDA, OpenMP, MPI, Javascript, TypeScript}}
+\achievement{\textit{RISC-V, Qiskit, PyTorch, Tensorflow, React, REST, AWS, Docker, VCS, GDB, Clang, NVCC}}
+
+
 
 % ----- Work Experience -----
 \section{Work Experience}
 
-\experience{Summer Intern}{Radiant Software Systems}{Aug 2021}{May 2021}{
+\experience{Graduate Student Instructor}{EECS 498: Quantum Computing}{May 2023}{Present}{
     \achievement{
-
-        Developed a mobile app in \tech{React Native} that was
-        downloaded 100k times on Google Play.
-
-    }
-    \achievement{
-
-        Collaborated in an \tech{Agile/Scrum} team of 8 engineers to
-        deliver new features every 2 weeks.
-
+        Redesigned course with lead instructor. Improved project
+        specification and test suites. Taught lab sections and held
+        office hours.
     }
 }
+
+\experience{Business Analytics Intern}{Candela Medical}{May 2022}{Aug 2022}{
+    \achievement{
+        Evaluated, designed, and implemented internal information platform for information
+        acquisition and sharing.
+    }
+}
+
+\experience{Software \& Algorithm Development Intern}{Werfen}{May 2021}{Aug 2021}{
+
+    \achievement{
+        Drafted roadmaps and formalized criteria and limitations for Mercury Algorithm Prototype (MAP). Engineered pivotal elements of MAP such as backend modules, front-end web tool, and GUI.
+    }
+}
+
 
 % ----- Technical Projects -----
 \section{Technical Projects}
 
-\experience{Expressive Resume}{Personal Project}{Nov 2021}{Dec 2021}{
+\experience{R10K Out-of-Order Processor Redesign with RISC-V ISA}{Team Design}{Jan 2024}{Present}{
+
+    \achievement{Engineered advanced fetch mechanisms like GShare-Best branch predictor, branch target buffer, return address stack to reduce instruction fetch latency. Revamped memory hierarchy using instruction and data prefetching, associateive, dual-ported, banked, and non-blocking cache, along victim caching strategies. Optimized dependent memory operations with integration of a load-store queue and data forwarding techniques, facilitating rapid data access
+    }
+    \achievement{}
+}
+
+\experience{Batched Quantum Circuit Simulation on GPU}{Personal Project}{Sep 2023}{Present}{
     \achievement{
-
-        Created a \tech{\LaTeX} class that makes it easy for anyone to
-        quickly create a beautiful resume and cover letter.
-
+        Engineered a CUDA framework for efficient parallel simulation
+        of multiple quantum circuits on GPU, focusing on tackling
+        complexities of diverse quantum experiments and integration of
+        dynamic shot-branching techniques.
+    }
+    \achievement{
+        Performed extensive performance evaluations, revealing super-linear
+        enhancements in both simulation efficiency and scalability,
+        identifying potential bottleneck areas and proposing corresponding
+        optimization strategies.
     }
 }
+
+\experience{Compiler Optimization for CUDA Memory Coalescing
+    (COALDA)}{Team Design}{Sep 2023}{Dec 2023}{
+    \achievement{
+        Developed a cutting-edge LLVM optimization framework aimed at
+        boosting CUDA program efficiency by optimizing memory access
+        patterns, specifically targeting and restructuring uncoalesced
+        memory accesses for enhanced performance.
+    }
+    \achievement{
+        Conducted thorough static analysis and performance evaluations
+        of CUDA kernels, achieving a notable reduction in L2 cache
+        bandwidth usage, thereby enhancing overall computing efficiency.
+    }
+}
+
+
+\experience{Linux-Based Operating System}{Team Design}{Jan 2023}{May 2023}{
+    \achievement{
+        Developed a custom thread library to simulate multi-cpu, multi-threaded
+        execution using C/C++
+    }
+    \achievement{
+        Implemented a sophisticated kernel pager system for efficient
+        management of applications' virtual memory, encompassing the
+        creation, copying, destruction, and allocation of address spaces.
+    }
+    \achievement{
+        Engineered robust, multi-threaded network file server utilizing
+        BSD socket programming and client-server protocols for reliable data
+        exchange. Designed a hierarchical file system with comprehensive
+        access control and fine-grained locking mechanisms to secure file
+        ownership and permissions.
+    }
+}
+
+\section{Personal}
+\achievement{Authorized to work for any employer in the US}
+\achievement{Ex-competitive saber fencer and team lead who also loves skiing and playing tennis leisurely}
+\achievement{Founder of BeaverWorks engineering club with MIT Lincoln Lab and BAE \& System as sponsors}
+\achievement{Multilingual: \textit{English, Mandarin, Cantonese, French}}
+
 
 \end{document}
