@@ -15,28 +15,27 @@
     fixobjectivespacing=true
 ]
 
-\objective{Highly motivated engineering graduate with strong foundation in computer science and engineering. Passionate about computer architecture, SW/HW co-design, accelerated computing, HPC, quantum computing, and software engineering. Quick to adapt to new technologies and concepts.}
-
+\objective{Motivated engineering graduate passionate about computer architecture, SW/HW co-design, accelerated computing, HPC, quantum computing, and software engineering. Quick to adapt to new technologies and concepts.}
 % ----- Education -----
 \section{Education}
 
 \experience{Master of Science in Engineering}{Computer Science \& Engineering}{Aug 2023}{May 2025}{
     \noindent Rackham Graduate School, University of Michigan \hfill GPA: 4.00
-    \achievement{Graduate Student Instructor for EECS 498: Quantum Computing and EECS 587: Parallel Computing}
 }
 
 \experience{Bachelor of Science in Engineering}{Computer Science, minors in Math and Physics}{Aug 2020}{May 2023}{
     \noindent College of Engineering, University of Michigan \hfill \textit{Summa Cum Laude, Dean's List, University Honors}, GPA: 3.77
 }
 
+
 \section{Skills}
 \noindent\achievement{\textbf{Coursework:} Computer Architecture and Microarchitecture,
-    Parallel Computing and Architecture, GPU Programming,
-    Compiler Design, Data Structure and Algorithms, Operating System, Machine
-    Learning, Web Systems, Quantum Computing and Architecture}
+    Parallel Computing and Architecture, GPU Programming, Machine
+    Learning, Quantum Computing and Architecture, Compiler Design, Data Structure and Algorithms, Operating System, Web Systems}
 \achievement{\textbf{Languages:} C/C++, Python, Go, Rust, Java, CUDA, OpenMP, MPI,
     Verilog/SystemVerilog, Chisel, Tcl, Javascript, TypeScript}
 \achievement{\textbf{Frameworks and tools:} PyTorch, CUDA-Q, Qiskit, AWS, Docker, Chipyard, GPGPU-Sim, Synopsys (DC, VCS, Verdi), GNU, LLVM, Valgrind}
+\achievement{\textbf{Multilingual:} English, Mandarin, Cantonese, French}
 
 
 
@@ -55,6 +54,15 @@
     }
 }
 
+\experience{Graduate Student Instrctor}{University of Michigan}{May 2023}{Present}{
+    \achievement{
+        EECS 498: Quantum Computing - Discussions and labs on quantum theories, algorithms and circuits using Qiskit.
+    }
+    \achievement{
+        CSE 587: Parallel Computing - Discussions and labs on OpenMPI, OpenMP, and CUDA.
+    }
+}
+
 \experience{Software \& Algorithm Development Intern}{Werfen}{May 2021}{Aug 2021}{
 
     \achievement{
@@ -66,8 +74,7 @@
 % ----- Technical Projects -----
 \section{Technical Projects}
 
-\experience{R10K Out-of-Order Processor Redesign with RISC-V ISA}{Team
-    Design}{Jan 2024}{May 2024}{
+\experience{R10K Out-of-Order Processor Redesign with RISC-V ISA}{Architecture}{Jan 2024}{May 2024}{
 
     \achievement{Engineered advanced features like N-way superscalar, GShare-Best branch
         predictor, early tag broadcasting, and return address stack to reduce
@@ -84,9 +91,7 @@
 
     }
 }
-
-\experience{Batched Quantum Circuit Simulation on CUDA-ready GPU}{Personal
-    Project}{Sep 2023}{May 2024}{
+\experience{Batched Quantum Circuit Simulation on CUDA-ready GPU}{GPU}{Sep 2023}{May 2024}{
     \achievement{
         Engineered a CUDA framework for efficient, batched simulation
         of diverse quantum circuits on GPU in parallel.
@@ -99,41 +104,25 @@
 }
 
 \experience{Compiler Optimization for CUDA Memory Coalescing
-    (COALDA)}{Team Design}{Sep 2023}{Dec 2023}{
+    (COALDA)}{Compiler}{Sep 2023}{Dec 2023}{
     \achievement{
-        Boosted CUDA program efficiency by optimizing memory access
-        patterns, targeting and restructuring uncoalesced
-        memory accesses. Thorough \textbf{static analysis}
-        and performance evaluations showed a notable reduction in L2 cache
-        bandwidth usage.
-    }
-    \achievement{
-        Established an NVCC-Clang compilation pipeline to make CUDA kernel
-        available for IR-level optimization.
+        Developed a CUDA compiler optimization tool using AST and canonical forms to transform uncoalesced memory accesses into coalesced patterns, 
+        achieving 9x L2 cache writeback reduction and 6.4x read bandwidth improvement, validated through Clang-NVCC integration and NVIDIA Nsight Compute.
     }
 }
 
 
-\experience{Linux-Based Operating System}{Team Design}{Jan 2023}{May 2023}{
+\experience{Linux-Based Operating System}{Operating System}{Jan 2023}{May 2023}{
     \achievement{
-        Developed a custom thread library to simulate multi-cpu, multi-threaded
-        execution using \textbf{C/C++}. Implemented a sophisticated kernel pager
-        system for efficient management of applications' virtual memory,
-        encompassing the
-        creation, copying, destruction, and allocation of address spaces.
-        Engineered robust, multi-threaded network file server for reliable
-        data
-        exchange. Designed a hierarchical file system with comprehensive
+        Developed a \tech{custom thread library} to simulate multi-cpu, multi-threaded
+        execution using \textbf{C/C++}. Implemented a sophisticated \tech{kernel pager
+        system} for efficient management of applications' virtual memory,
+        encompassing the creation, copying, destruction, and allocation of address spaces.
+        Engineered robust, \tech{multi-threaded network file server} for reliable
+        data exchange. Designed a hierarchical file system with comprehensive
         access control and fine-grained locking mechanisms to secure file
         ownership and permissions.
     }
 }
-
-\section{Personal}
-\achievement{\textbf{Authorized to work for any employer in the US}}
-\achievement{Competitive saber fencing athlete who also loves alpine skiing and playing tennis}
-\achievement{Founder of BeaverWorks engineering club with MIT Lincoln Lab and BAE \& System as sponsors}
-\achievement{Multilingual: English, Mandarin, Cantonese, French}
-
 
 \end{document}
