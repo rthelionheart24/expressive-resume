@@ -44,29 +44,29 @@
 
 \experience{Hardware Technology Intern}{Apple Inc.}{May 2024}{Aug 2024}{
     \achievement{
-        Implemented PPROC method to evaluate hardware coverage on
+        Implemented \tech{PPROC method} to evaluate hardware coverage on
         pixel processing module down to bit-field-level. Coverage result
         provides feedback and guidance for arch test improvement.
         Constructed feedback loop using PPROC
         to optimize test coverage by adjusting parameters.
-        Internalize hardware coverage PPROC method into C/C++ testing
+        Internalize hardware coverage PPROC method into \tech{C/C++} testing
         infrastructure to run and provide feedback on-the-fly.
     }
 }
 
 \experience{Graduate Student Instrctor}{University of Michigan}{May 2023}{Present}{
     \achievement{
-        EECS 498: Quantum Computing - Discussions and labs on quantum theories, algorithms and circuits using Qiskit.
+        EECS 498: Quantum Computing - Discussions and labs on quantum theories, algorithms and circuits using \tech{Qiskit}.
     }
     \achievement{
-        CSE 587: Parallel Computing - Discussions and labs on OpenMPI, OpenMP, and CUDA.
+        CSE 587: Parallel Computing - Discussions and labs on \tech{OpenMPI, OpenMP, and CUDA}.
     }
 }
 
 \experience{Software \& Algorithm Development Intern}{Werfen}{May 2021}{Aug 2021}{
 
     \achievement{
-        Drafted roadmaps and formalized criteria and limitations for Mercury Algorithm Prototype (MAP). Engineered embedded modules, front-end web tool, and GUI for the prototype using C/C++ and Qt framework.
+        Drafted roadmaps and formalized criteria and limitations for Mercury Algorithm Prototype (MAP). Engineered \tech{embedded} modules, \tech{front-end web tool}, and GUI for the prototype using \tech{C/C++ and Qt framework}.
     }
 }
 
@@ -74,40 +74,40 @@
 % ----- Technical Projects -----
 \section{Technical Projects}
 
-\experience{R10K Out-of-Order Processor Redesign with RISC-V ISA}{Architecture}{Jan 2024}{May 2024}{
+\experience{R10K Out-of-Order Processor based on RISC-V ISA}{Architecture}{Jan 2024}{May 2024}{
 
-    \achievement{Engineered advanced features like N-way superscalar, GShare-Best branch
-        predictor, early tag broadcasting, and return address stack to reduce
-        latency. Revamped memory hierarchy using
-        prefetching, associative, multi-ported and non-blocking
-        cache, along with victim caching strategies. Optimized dependent memory
-        operations with a data-forwarding load-store queue.
-    }
     \achievement{
-        Designed, implemented and verified microarchitecture at RTL level
-        for reservation stations, Icache, Dcache, and load-store
-        queue. Successfully simulated and synthesized the processor and
-        passed 100\% of test suites. Performanced ranked top 25\% among all.
-
+        Designed and implemented out-of-order superscalar
+        processor with N-way execution at \tech{RTL level} using \tech{SystemVerilog}, featuring \tech{Tomasulo's algorithm},
+        instruction and data caches (prefetching, associative, and non-blocking with victim cache),
+        G-share best branch predictor, return address stack, and reservation
+        stations. Optimized performance with early tag broadcast and a
+        robust memory hierarchy including a load-store queue with data
+        forwarding. Achieved a 30\% improvement in CPI and a clock period of 15.5ns through various
+        architectural enhancements and pipeline optimizations. Verified
+        and tested the design using \tech{Synopsys DC} and exhaustive
+        benchmarks.
     }
 }
 \experience{Batched Quantum Circuit Simulation on CUDA-ready GPU}{GPU}{Sep 2023}{May 2024}{
     \achievement{
-        Engineered a CUDA framework for efficient, batched simulation
-        of diverse quantum circuits on GPU in parallel.
+        Developed a \tech{CUDA-based} quantum simulation framework for
+        performing batched quantum experiments on GPUs, enabling
+        parallel execution of quantum circuits with varying gate counts
+        and types. Implemented a \tech{synchronization strategy} to handle
+        non-deterministic quantum operators and efficient
+        \tech{shot-branching}. Achieved \tech{super-linear speedup} in runtime
+        performance and optimized memory usage through careful task
+        batching and state management.
     }
-    \achievement{
-        Achieved super-linear enhancements in both simulation efficiency and scalability,
-        identifying potential bottleneck areas and proposing corresponding
-        optimization strategies.
-    }
+
 }
 
 \experience{Compiler Optimization for CUDA Memory Coalescing
     (COALDA)}{Compiler}{Sep 2023}{Dec 2023}{
     \achievement{
-        Developed a CUDA compiler optimization tool using AST and canonical forms to transform uncoalesced memory accesses into coalesced patterns, 
-        achieving 9x L2 cache writeback reduction and 6.4x read bandwidth improvement, validated through Clang-NVCC integration and NVIDIA Nsight Compute.
+        Developed an \tech{IR-level} CUDA compiler optimization tool using \tech{AST and canonical forms} to transform uncoalesced memory accesses into coalesced patterns,
+        achieving 9x L2 cache writeback reduction and 6.4x read bandwidth improvement, validated through \tech{Clang-NVCC} integration and \tech{NVIDIA Nsight Compute}.
     }
 }
 
