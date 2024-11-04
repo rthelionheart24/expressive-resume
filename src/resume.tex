@@ -21,6 +21,7 @@
 
 \experience{Master of Science in Engineering}{Computer Science \& Engineering}{Aug 2023}{May 2025}{
     \noindent Rackham Graduate School, University of Michigan \hfill GPA: 4.00
+    \achievement{Graduate Student Instructor for Quantum Computing and Parallel Computing}
 }
 
 \experience{Bachelor of Science in Engineering}{Computer Science, minors in Math and Physics}{Aug 2020}{May 2023}{
@@ -34,7 +35,7 @@
     Learning, Quantum Computing and Architecture, Compiler Design, Data Structure and Algorithms, Operating System, Web Systems}
 \achievement{\textbf{Languages:} C/C++, Python, Go, Rust, Java, CUDA, OpenMP, MPI,
     Verilog/SystemVerilog, Chisel, Tcl, Javascript, TypeScript}
-\achievement{\textbf{Frameworks and tools:} PyTorch, CUDA-Q, Qiskit, AWS, Docker, Chipyard, GPGPU-Sim, Synopsys (DC, VCS, Verdi), GNU, LLVM, Valgrind}
+\achievement{\textbf{Frameworks and tools:} PyTorch, CUDA-Q, Qiskit, AWS, Docker, Chipyard, Synopsys (DC, VCS, Verdi), GNU, LLVM, Valgrind}
 \achievement{\textbf{Multilingual:} English, Mandarin, Cantonese, French}
 
 
@@ -44,30 +45,30 @@
 
 \experience{Hardware Technology Intern}{Apple Inc.}{May 2024}{Aug 2024}{
     \achievement{
-        Implemented \tech{PPROC method} to evaluate hardware coverage on
-        pixel processing module down to bit-field-level. Coverage result
-        provides feedback and guidance for arch test improvement.
-        Constructed feedback loop using PPROC
-        to optimize test coverage by adjusting parameters.
-        Internalize hardware coverage PPROC method into \tech{C/C++} testing
-        infrastructure to run and provide feedback on-the-fly.
+        Implemented PPROC method to evaluate hardware coverage on
+        pixel processing module down to bit-field-level. Output indicated 74\% coverage and
+        identifies 22\% critical under-covered areas; arch test suites optimized upon communication with architecture team and full coverage achieved. 
+        Output additionally exposed critical bugs in testing infrastructure that was later resolved by maintainers.
     }
-}
-
-\experience{Graduate Student Instrctor}{University of Michigan}{May 2023}{Present}{
+        
     \achievement{
-        EECS 498: Quantum Computing - Discussions and labs on quantum theories, algorithms and circuits using \tech{Qiskit}.
-    }
-    \achievement{
-        CSE 587: Parallel Computing - Discussions and labs on \tech{OpenMPI, OpenMP, and CUDA}.
+        Constructed heuristic-based algorithm using PPROC metadata
+        to optimize arch test coverage using dynamic parameter adjustment.
+        Integrate hardware coverage PPROC method into \tech{C/C++} testing
+        infrastructure to run and provide feedback in real time. 
     }
 }
 
 \experience{Software \& Algorithm Development Intern}{Werfen}{May 2021}{Aug 2021}{
 
     \achievement{
-        Drafted roadmaps and formalized criteria and limitations for Mercury Algorithm Prototype (MAP). Engineered \tech{embedded} modules, \tech{front-end web tool}, and GUI for the prototype using \tech{C/C++ and Qt framework}.
+        Drafted roadmaps and formalized criteria and limitations for improving Mercury, the point-of-care diagnostic tool for blood coagulation.
+        Engineered core embedded modules to process customized medical algorithm, monitor blood data, and provide real-time feedback based on medical algorithm; engineered GUI module for data visualization using \tech{C/C++ and Qt framework}.
     }
+    \achievement{
+        Built from scratch a \tech{real-time data processing pipeline} to handle, process data from medical devices and display results on GUI; served as starting point for Mercury Algorithm Prototype (MAP), the next-gen product.
+    }
+
 }
 
 
@@ -80,13 +81,11 @@
         Designed and implemented out-of-order superscalar
         processor with N-way execution at \tech{RTL level} using \tech{SystemVerilog}, featuring \tech{Tomasulo's algorithm},
         instruction and data caches (prefetching, associative, and non-blocking with victim cache),
-        G-share best branch predictor, return address stack, and reservation
-        stations. Optimized performance with early tag broadcast and a
-        robust memory hierarchy including a load-store queue with data
-        forwarding. Achieved a 30\% improvement in CPI and a clock period of 15.5ns through various
-        architectural enhancements and pipeline optimizations. Verified
-        and tested the design using \tech{Synopsys DC} and exhaustive
-        benchmarks.
+        G-share best branch predictor, return address stack, and reservation stations. 
+    }
+    \achievement{
+        Optimized performance with early tag broadcast and robust memory hierarchy including load-store queue with data forwarding. 
+        Achieved 30\% improvement in CPI and clock period of 15.5ns. Verified and tested the design using \tech{Synopsys DC} and exhaustive benchmarks.
     }
 }
 \experience{Batched Quantum Circuit Simulation on CUDA-ready GPU}{GPU}{Sep 2023}{May 2024}{
@@ -94,34 +93,41 @@
         Developed a \tech{CUDA-based} quantum simulation framework for
         performing batched quantum experiments on GPUs, enabling
         parallel execution of quantum circuits with varying gate counts
-        and types. Implemented a \tech{synchronization strategy} to handle
-        non-deterministic quantum operators and efficient
-        \tech{shot-branching}. Achieved \tech{super-linear speedup} in runtime
-        performance and optimized memory usage through careful task
+        and types. Implemented \tech{synchronization strategy} to handle
+        non-deterministic quantum operators and efficient \tech{shot-branching}. 
+    }
+    \achievement{
+        Achieved \tech{superlinear speedup} in runtime
+        performance and optimized memory usage through task
         batching and state management.
     }
-
 }
-
 \experience{Compiler Optimization for CUDA Memory Coalescing
     (COALDA)}{Compiler}{Sep 2023}{Dec 2023}{
     \achievement{
-        Developed an \tech{IR-level} CUDA compiler optimization tool using \tech{AST and canonical forms} to transform uncoalesced memory accesses into coalesced patterns,
-        achieving 9x L2 cache writeback reduction and 6.4x read bandwidth improvement, validated through \tech{Clang-NVCC} integration and \tech{NVIDIA Nsight Compute}.
+        Developed a IR-level CUDA compiler optimization tool using \tech{AST and canonical forms} to transform uncoalesced memory accesses into coalesced patterns.
+        Implemented an NVCC-LLVM pipeline that allows for seamless integration with existing CUDA toolchains and optimziation to LLVM IR.
+        
+    }
+    \achievement{
+        Achieved 9x L2 cache writeback reduction and 6.4x read bandwidth improvement, validated through \tech{NVIDIA Nsight Compute}.
     }
 }
 
 
 \experience{Linux-Based Operating System}{Operating System}{Jan 2023}{May 2023}{
     \achievement{
-        Developed a \tech{custom thread library} to simulate multi-cpu, multi-threaded
-        execution using \textbf{C/C++}. Implemented a sophisticated \tech{kernel pager
-        system} for efficient management of applications' virtual memory,
-        encompassing the creation, copying, destruction, and allocation of address spaces.
-        Engineered robust, \tech{multi-threaded network file server} for reliable
-        data exchange. Designed a hierarchical file system with comprehensive
-        access control and fine-grained locking mechanisms to secure file
-        ownership and permissions.
+        Developed a \tech{custom thread library} to support multi-cpu, multi-threaded
+        execution using \textbf{C/C++}.
+    } 
+    \achievement{
+        Implemented a \tech{kernel pager} 
+        for efficient management of applications' virtual memory using both Swap and physical memory.
+    }
+    \achievement{
+        Engineered a \tech{multi-threaded network file server} for reliable
+        data exchange. Designed a hierarchical file system with secure file
+        ownership and permissions and fine-grained locking mechanisms.
     }
 }
 
