@@ -48,25 +48,22 @@
         Implemented PPROC method to evaluate hardware coverage on
         pixel processing module down to bit-field-level. Output indicated 74\% coverage and
         identifies 22\% critical under-covered areas; arch test suites optimized upon communication with architecture team and full coverage achieved. 
-        Output additionally exposed critical bugs in testing infrastructure that was later resolved by maintainers.
+        Output exposed critical bugs in architectural C-model that was later resolved by maintainers.
     }
         
     \achievement{
         Constructed heuristic-based algorithm using PPROC metadata
         to optimize arch test coverage using dynamic parameter adjustment.
-        Integrate hardware coverage PPROC method into \tech{C/C++} testing
-        infrastructure to run and provide feedback in real time. 
+        Integrate hardware coverage PPROC method into \tech{C/C++} bare-metal testing
+        infrastructure and architectural C-model to run and provide feedback in real time. 
     }
 }
 
 \experience{Software \& Algorithm Development Intern}{Werfen}{May 2021}{Aug 2021}{
 
     \achievement{
-        Drafted roadmaps and formalized criteria and limitations for improving Mercury, the point-of-care diagnostic tool for blood coagulation.
-        Engineered core embedded modules to process customized medical algorithm, monitor blood data, and provide real-time feedback based on medical algorithm; engineered GUI module for data visualization using \tech{C/C++ and Qt framework}.
-    }
-    \achievement{
-        Built from scratch a \tech{real-time data processing pipeline} to handle, process data from medical devices and display results on GUI; served as starting point for Mercury Algorithm Prototype (MAP), the next-gen product.
+        Improved Mercury, the point-of-care diagnostic tool for blood coagulation.
+        Engineered core embedded modules to process customized medical algorithm and monitor blood data; engineered GUI module for real-time feedback and data visualization using \tech{C/C++ and Qt framework}. Built from scratch a \tech{real-time data processing pipeline} to handle, process data from medical devices and display results on GUI; prototype served as starting point for the next-gen product.
     }
 
 }
@@ -85,7 +82,8 @@
     }
     \achievement{
         Optimized performance with early tag broadcast and robust memory hierarchy including load-store queue with data forwarding. 
-        Achieved 30\% improvement in CPI and clock period of 15.5ns. Verified and tested the design using \tech{Synopsys DC} and exhaustive benchmarks.
+        Achieved 30\% improvement in CPI and clock period of 15.5ns. Verified and tested the design using \tech{Synopsys DC} and exhaustive benchmarks including 
+        alexnet, dft, matrix multiplication, and saxpy.
     }
 }
 \experience{Batched Quantum Circuit Simulation on CUDA-ready GPU}{GPU}{Sep 2023}{May 2024}{
@@ -106,7 +104,7 @@
     (COALDA)}{Compiler}{Sep 2023}{Dec 2023}{
     \achievement{
         Developed a IR-level CUDA compiler optimization tool using \tech{AST and canonical forms} to transform uncoalesced memory accesses into coalesced patterns.
-        Implemented an NVCC-LLVM pipeline that allows for seamless integration with existing CUDA toolchains and optimziation to LLVM IR.
+        Implemented NVCC-LLVM pipeline that allows for seamless integration with existing CUDA toolchains and optimziation to LLVM IR. 
         
     }
     \achievement{
